@@ -1,11 +1,9 @@
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 
 from app.api.v1.router import api_router
-from app.config import settings
 import logging
 
 logging.basicConfig(level = logging.INFO, format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s")
